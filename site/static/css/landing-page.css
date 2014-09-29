@@ -34,10 +34,51 @@ h6 {
     background-size: cover;
 }
 
-.intro-message {
-    position: relative;
-    padding-top: 20%;
-    padding-bottom: 20%;
+.redbutton {
+    width: 180px;
+    color: white;
+    background: #e35050;
+    border: none;
+}
+
+.banneraarowbox {
+    border: 2px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 200px;
+    height: 35px;
+    background-color: #2ccfde;
+    border-color: #2ccfde;
+}
+
+.containerimg {
+    width: auto;
+    height: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding-top: 30px;
+
+}
+
+/* resize images */
+.containerimg img {
+    width: auto;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+
+.banneroutsidebox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topbanner{
+    background-color: #2ccfde;
+    border-color: #2ccfde;
 }
 
 .intro-message > h1 {
@@ -54,6 +95,14 @@ h6 {
 
 .intro-message > h3 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.opentab {
+    height: 150px;
+}
+
+.closetab{
+    height: 20px;
 }
 
 @media(max-width:767px) {
