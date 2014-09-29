@@ -1,0 +1,152 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'serve' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose cache add [ 'serve', null ]
+5 verbose cache add name=undefined spec="serve" args=["serve",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'serve',
+6 verbose parsed url   path: 'serve',
+6 verbose parsed url   href: 'serve' }
+7 silly lockFile b88fb872-serve serve
+8 verbose lock serve /Users/Kaya/.npm/b88fb872-serve.lock
+9 silly lockFile b88fb872-serve serve
+10 silly lockFile b88fb872-serve serve
+11 verbose addNamed [ 'serve', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile f5f9b276-serve serve@
+14 verbose lock serve@ /Users/Kaya/.npm/f5f9b276-serve.lock
+15 silly addNameRange { name: 'serve', range: '*', hasData: false }
+16 verbose request where is /serve
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id f72985c075de972f
+19 verbose url raw /serve
+20 verbose url resolving [ 'https://registry.npmjs.org/', './serve' ]
+21 verbose url resolved https://registry.npmjs.org/serve
+22 verbose request where is https://registry.npmjs.org/serve
+23 info trying registry request attempt 1 at 20:39:09
+24 http GET https://registry.npmjs.org/serve
+25 http 200 https://registry.npmjs.org/serve
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Mon, 29 Sep 2014 00:39:09 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"DQI9ADDDNW8TEX4HBWYZ4FP18"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '14769',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-ord1732-ORD',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1411951149.819100,VS0,VE158',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'serve', range: '*', hasData: true }
+28 silly addNameRange versions [ 'serve',
+28 silly addNameRange   [ '0.0.1',
+28 silly addNameRange     '0.0.2',
+28 silly addNameRange     '0.0.3',
+28 silly addNameRange     '0.0.4',
+28 silly addNameRange     '0.0.5',
+28 silly addNameRange     '1.0.0',
+28 silly addNameRange     '1.0.1',
+28 silly addNameRange     '1.0.2',
+28 silly addNameRange     '1.0.3',
+28 silly addNameRange     '1.1.0',
+28 silly addNameRange     '1.2.0',
+28 silly addNameRange     '1.3.0',
+28 silly addNameRange     '1.4.0' ] ]
+29 verbose addNamed [ 'serve', '1.4.0' ]
+30 verbose addNamed [ '1.4.0', '1.4.0' ]
+31 silly lockFile 41214fd0-serve-1-4-0 serve@1.4.0
+32 verbose lock serve@1.4.0 /Users/Kaya/.npm/41214fd0-serve-1-4-0.lock
+33 silly lockFile d8ec0c06--npmjs-org-serve-serve-1-4-0-tgz https://registry.npmjs.org/serve/-/serve-1.4.0.tgz
+34 verbose lock https://registry.npmjs.org/serve/-/serve-1.4.0.tgz /Users/Kaya/.npm/d8ec0c06--npmjs-org-serve-serve-1-4-0-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/serve/-/serve-1.4.0.tgz',
+35 verbose addRemoteTarball   'e35f3ce6b42586b7f3ded7b5b0a31a01bb0e1005' ]
+36 info retry fetch attempt 1 at 20:39:09
+37 verbose fetch to= /var/folders/9m/872r9pm17snbnv9kl2tl1wd40000gn/T/npm-20085-gVDCkifG/registry.npmjs.org/serve/-/serve-1.4.0.tgz
+38 http GET https://registry.npmjs.org/serve/-/serve-1.4.0.tgz
+39 http 200 https://registry.npmjs.org/serve/-/serve-1.4.0.tgz
+40 silly lockFile d8ec0c06--npmjs-org-serve-serve-1-4-0-tgz https://registry.npmjs.org/serve/-/serve-1.4.0.tgz
+41 silly lockFile d8ec0c06--npmjs-org-serve-serve-1-4-0-tgz https://registry.npmjs.org/serve/-/serve-1.4.0.tgz
+42 silly lockFile 41214fd0-serve-1-4-0 serve@1.4.0
+43 silly lockFile 41214fd0-serve-1-4-0 serve@1.4.0
+44 silly lockFile f5f9b276-serve serve@
+45 silly lockFile f5f9b276-serve serve@
+46 silly resolved [ { name: 'serve',
+46 silly resolved     version: '1.4.0',
+46 silly resolved     description: 'Simple command-line file / directory server built with connect',
+46 silly resolved     keywords: [ 'static', 'server', 'connect' ],
+46 silly resolved     author: { name: 'TJ Holowaychuk', email: 'tj@vision-media.ca' },
+46 silly resolved     preferGlobal: true,
+46 silly resolved     homepage: 'https://github.com/visionmedia/serve',
+46 silly resolved     repository: { type: 'git', url: 'https://github.com/visionmedia/serve.git' },
+46 silly resolved     dependencies:
+46 silly resolved      { connect: '2.3.x',
+46 silly resolved        stylus: '*',
+46 silly resolved        jade: '*',
+46 silly resolved        'less-middleware': '*',
+46 silly resolved        commander: '0.6.1' },
+46 silly resolved     bin: { serve: './bin/serve' },
+46 silly resolved     bugs: { url: 'https://github.com/visionmedia/serve/issues' },
+46 silly resolved     _id: 'serve@1.4.0',
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'e35f3ce6b42586b7f3ded7b5b0a31a01bb0e1005',
+46 silly resolved        tarball: 'http://registry.npmjs.org/serve/-/serve-1.4.0.tgz' },
+46 silly resolved     _from: 'serve@',
+46 silly resolved     _npmVersion: '1.4.4',
+46 silly resolved     _npmUser: { name: 'tjholowaychuk', email: 'tj@vision-media.ca' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     directories: {},
+46 silly resolved     _shasum: 'e35f3ce6b42586b7f3ded7b5b0a31a01bb0e1005',
+46 silly resolved     _resolved: 'https://registry.npmjs.org/serve/-/serve-1.4.0.tgz' } ]
+47 info install serve@1.4.0 into /usr/local/lib
+48 info installOne serve@1.4.0
+49 verbose lib/node_modules/serve unbuild
+50 verbose tar unpack /Users/Kaya/.npm/serve/1.4.0/package.tgz
+51 silly lockFile 11654a08-usr-local-lib-node-modules-serve tar:///usr/local/lib/node_modules/serve
+52 verbose lock tar:///usr/local/lib/node_modules/serve /Users/Kaya/.npm/11654a08-usr-local-lib-node-modules-serve.lock
+53 silly lockFile 95621cc2-Kaya-npm-serve-1-4-0-package-tgz tar:///Users/Kaya/.npm/serve/1.4.0/package.tgz
+54 verbose lock tar:///Users/Kaya/.npm/serve/1.4.0/package.tgz /Users/Kaya/.npm/95621cc2-Kaya-npm-serve-1-4-0-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/serve'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/serve']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/serve',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/serve',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:107:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 13.3.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "serve"
+60 error cwd /Users/Kaya/WebstormProjects/riskars
+61 error node -v v0.10.32
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/serve
+64 error fstream_path /usr/local/lib/node_modules/serve
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/serve'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:107:15)
+71 verbose exit [ 3, true ]
