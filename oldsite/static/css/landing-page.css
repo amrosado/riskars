@@ -41,29 +41,39 @@ h6 {
     border: none;
 }
 
-.row {
-    width: 100%;
-    margin: 0 auto;
-}
-.block {
-    width: auto;
-    float: left;
+.banneraarowbox {
+    border: 2px solid;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    width: 200px;
+    height: 35px;
+    background-color: #2ccfde;
+    border-color: #2ccfde;
 }
 
 .containerimg {
     width: auto;
-    height: auto;
+    height: 120px;
     display: flex;
     align-content: center;
     justify-content: center;
-    padding: 0 0 0 0;
-    background-image: url('../img/pplinrain.png');
-    background-repeat:no-repeat;
-    background-size:cover;
-    background-size: 100%;
+    padding-top: 30px;
+
 }
 
+/* resize images */
+.containerimg img {
+    width: auto;
+    height: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
+.containerimg p {
+    color: #ffffff;
+    padding-top: 10px;
+    text-align: center;
+}
 
 
 .banneroutsidebox {
@@ -73,49 +83,8 @@ h6 {
 }
 
 .topbanner{
-    background-color: #ffffff;
+    background-color: #2ccfde;
     border-color: #2ccfde;
-    height: 80px;
-    box-shadow: 0px 3px 0px;
-    color: #cccccc;
-    width: 100%;
-}
-
-.rainpic {
-    box-shadow: 0px 5px 0px;
-    color: #000000;
-    width: 100%;
-}
-
-.descriptiontext{
-    text-align: center;
-    width: 700px;
-    font-size: 40px;
-    color: #49d5e2;
-    padding-top: 150px;
-    padding-bottom: 300px;
-    margin: 0 auto;
-}
-
-.rlink {
-    margin: auto 0;
-    display: inline-block;
-    height: 100%;
-    text-align: center;
-}
-
-.rtopbar{
-    vertical-align: middle;
-}
-
-
-.topbanner img {
-    height: 80px;
-    width: auto;
-    padding-top: 22px;
-    padding-bottom: 22px;
-    padding-left: 30px;
-    padding-right: 30px;
 }
 
 .intro-message > h1 {
@@ -134,6 +103,13 @@ h6 {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
 }
 
+.opentab {
+    height: 150px;
+}
+
+.closetab{
+    height: 20px;
+}
 
 @media(max-width:767px) {
     .intro-message {
