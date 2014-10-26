@@ -34,11 +34,7 @@ h6 {
     background-size: cover;
 }
 
-.redbutton {
-    width: 180px;
-    color: white;
-    background: #e35050;
-    border: none;
+
 }
 
 .row {
@@ -135,7 +131,7 @@ h6 {
 
 .orangediv {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     padding-left: 80px;
     padding-right: 80px;
 }
