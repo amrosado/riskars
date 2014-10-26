@@ -3,7 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="css/landing-page.css">
+    <link rel="stylesheet" href="css/index.css">
     <link href="font-awesome-4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
@@ -47,79 +47,47 @@
 
 
     <!-- /.container -->
-</div>
-
-<!-- INTRO Header -->
-<div class="intro-header">
-    <div class="containerimg rainpic">
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="intro-message" >
-                    <div>
-                            <div style="padding-top: 150px; padding-bottom: 150px">
-                                <h1 style="color:#ffffff; font-weight: lighter; padding-bottom: 50px; font-size: 50px">The Doctor of Tomorrow, on the Internet of Today</h1>
-                                <ul class="list-inline intro-social-buttons">
-                                    <div>
-                                        <li>
-                                            <a style="width: 180px;color: white;background: #e35050;border: none;" class="btn btn-default btn-lg"> <span class="network-name">Sign Up</span></a>
-                                        </li>
-                                        <div style="padding: 5px;"></div>
-                                        <li>
-                                            <a style="width: 180px;color: white;background: #e35050;border: none;" class="btn btn-default btn-lg"> <span class="network-name">Login</span></a>
-                                        </li>
-                                    </div>
-                                </ul>
-                            </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <!-- /.container -->
-
-</div>
-
-<div>
-    <div class="descriptiontext">Riskars analyzes big data to visualize your health risks through user friendly and smart platforms
-    </div>
-
-    <div class="tryitnow">- Try It Now -</div>
-
-    <div class="devicespic"><img src="img/devices.png"></div>
-</div>
 
 <div class="orange">
     <div class="orangediv">
+        <div><p style="font-size: 40px; color: #ffffff; font-weight: lighter; padding-bottom: 40px; padding-top:40px ">Our Team</p></div>
         <div class="row">
-            <div class="col-md-4">
-                <div class="orangedivdiv">
-                    <img src="img/search_icon.png">
-                    <div style="padding-top: 46px">
-                        <p class="orangedivbigtext">Search</p>
-                        <p class="orangedivlittletext">Use location or just maneuver through map </p>
+            <div class="col-md-3">
+                <div class="orangedivdivtwo">
+                    <img src="img/aaron.png">
+                    <div style="padding-top: 10px">
+                        <p class="orangedivbigtexttwo">Aaron Rosado</p>
+                        <p class="orangedivlittletexttwo">Emory MD/Phd</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="orangedivdiv">
-                    <img src="img/circles.png">
+            <div class="col-md-3">
+                <div class="orangedivdivtwo">
+                    <img src="img/gutman.png">
                     <div style="padding-top:10px">
-                        <p class="orangedivbigtext">Expand</p>
-                        <p class="orangedivlittletext">Click on search results and expand on the data</p>
+                        <p class="orangedivbigtexttwo">Dr. David Gutman</p>
+                        <p class="orangedivlittletexttwo">Md, Phd</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="orangedivdiv">
-                    <img src="img/results_icon.png">
-                    <div style="padding-top: 46px">
-                        <p class="orangedivbigtext">Results</p>
-                        <p class="orangedivlittletext">View detailed health issues and suggestions </p>
+            <div class="col-md-3">
+                <div class="orangedivdivtwo">
+                    <img src="img/kaya.png">
+                    <div style="padding-top: 10px">
+                        <p class="orangedivbigtexttwo">Kaya Deng</p>
+                        <p class="orangedivlittletexttwo">Emory BSN</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="orangedivdivtwo">
+                    <img src="img/bohan.png">
+                    <div style="padding-top: 10px">
+                        <p class="orangedivbigtexttwo">Bohan Liu</p>
+                        <p class="orangedivlittletexttwo">MIT </p>
                     </div>
                 </div>
             </div>
@@ -127,10 +95,71 @@
         </div>
     </div>
 </div>
+
+<div style="padding-top: 50px; padding-bottom: 50px">
+    <!-- Bootstrap CSS -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+    </head>
+    <body>
+    <br />
+    <!-- a row has to be in a container -->
+    <div class="container">
+        <!-- Contacts -->
+        <div id="contacts">
+            <div class="row">
+                <!-- Alignment -->
+                <div class="col-sm-offset-3 col-sm-6">
+                    <!-- Form itself -->
+                    <form name="sentMessage" class="well" id="contactForm"  novalidate>
+                        <legend>Contact Us</legend>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="text" class="form-control"
+                                       placeholder="Full Name" id="name" required
+                                       data-validation-required-message="Please enter your name" />
+                                <p class="help-block"></p>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <div class="controls">
+                                <input type="email" class="form-control" placeholder="Email"
+                                       id="email" required
+                                       data-validation-required-message="Please enter your email" />
+                            </div>
+                        </div>
+
+                        <div class="control-group">
+                            <div class="controls">
+                                <textarea rows="10" cols="100" class="form-control"
+                                          placeholder="Message" id="message" required
+                                          data-validation-required-message="Please enter your message" minlength="5"
+                                          data-validation-minlength-message="Min 5 characters"
+                                          maxlength="999" style="resize:none"></textarea>
+                            </div>
+                        </div>
+                        <div id="success"> </div> <!-- For success/fail messages -->
+                        <button type="submit" class="btn btn-primary pull-right">Send</button><br />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- JS FILES -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/jqBootstrapValidation.js"></script>
+<script src="./js/contact_me.js"></script>
+
+
 
 <div class="bottomblack">
     <div><p style="color: #959fa8; align-content: center">Riskars © 2014</p></div>
 </div>
+
+
 
 </body>
 </html>
