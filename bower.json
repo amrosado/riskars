@@ -12,5 +12,9 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "resolutions": {
+    "d3": "~3.4.11",
+    "topojson": "~1.6.18"
+  }
 }
