@@ -81,14 +81,6 @@ data: [
   {
     "Comorbidity":"Manhattan",
     "Coefficient":-0.36456906
-  },
-  {
-    "Comorbidity":"Chronic Pulmonary Disease",
-    "Coefficient":0.558703419
-  },
-  {
-    "Comorbidity":"Congestive Heart Failure",
-    "Coefficient":1.172734223
   }
 ],
   // The name of the data record attribute that contains x-values.
