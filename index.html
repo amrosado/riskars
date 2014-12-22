@@ -3,12 +3,47 @@
 <head lang="en">
     <meta charset="UTF-8">
     <link href='http://fonts.googleapis.com/css?family=Roboto:500,900italic,900,400italic,100,700italic,300,700,500italic,100italic,300italic,400&subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="import" href="bower_components/polymer/polymer.html">
+    <link rel="import" href="bower_components/core-elements/core-elements.html">
+    <link rel="import" href="bower_components/paper-elements/paper-elements.html">
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/d3/d3.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+
+    <link rel="stylesheet" type="text/css" href="riskars.css">
+
     <title>Riskars: Health Risks Visualized</title>
 
 </head>
 <body>
+    <core-toolbar style="background-color: #000000"></core-toolbar>
+    <div>
+        <img src="images/logo.png" id="logo"/>
+    </div>
 
+    <div class="centeringdiv">
+        <ul style="list-style-type: none; display: inline; -webkit-padding-start: 0px" >
+            <li style="display: inline"><a href="#" class="frontpagefont">ABOUT</a></li>
+            <li style="display: inline"><a href="#" class="frontpagefont">HOW IT WORKS</a></li>
+            <li style="display: inline"><a href="#" class="frontpagefont">CONTACT</a></li>
+        </ul>
+    </div>
+
+    <div class="centeringdiv" style="padding-top: 20px">
+        <span id="signinButton">
+          <span
+                  class="g-signin"
+                  data-callback="signinCallback"
+                  data-clientid="CLIENT_ID"
+                  data-cookiepolicy="single_host_origin"
+                  data-requestvisibleactions="http://schema.org/AddAction"
+                  data-scope="https://www.googleapis.com/auth/plus.login">
+          </span>
+        </span>
+    </div>
+
+    <div id="footer">
+
+    </div>
 </body>
 </html>
