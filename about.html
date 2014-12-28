@@ -38,17 +38,53 @@
         </core-toolbar>
 
         <div class="flexrow">
-            <div>
-                <div>hjkhkjh</div>
-                <div>jgkhjh</div>
+            <div style="padding-left: 6%; padding-right:6%; padding-top: 4%;">
+                <div>
+                    <p>
+                        <span class="topleftdescription1">US Census Bureau:</span>
+                        <span class="topleftdescription2">300 million</span>
+                        <span class="topleftdescription3">geocached data</span>
+                        <span class="topleftdescription1">samples. HHS Medicare Dataset:</span>
+                        <br/>
+                        <span class="topleftdescription4">650,000</span>
+                        <br/>
+                        <span class="topleftdescription2">hospital spending</span>
+                    </p>
+                </div>
+                <div style="padding-top: 35%; padding-right: 6%">
+                    <p>
+                        <span class="topleftdescription1">CMS Claims Dataset:</span>
+                        <br/>
+                        <span class="topleftdescription4">40,000 claims</span>
+                        <span class="topleftdescription1"> for <br/> various diseases.
+                            <br/>CDC Behavioral Risk Dataset:</span>
+                        <span class="topleftdescription2">aggregated</span>
+                        <span class="topleftdescription1"> risky behavioral statistics from</span>
+                        <span class="topleftdescription2">all 50 states.</span>
+                    </p>
+                </div>
             </div>
             <div class="centeringdiv">
-                <div><img src="images/devices.png" class="devicepic"/></div>
-                <div class="description">Riskars analyzes big data to visualize
-                    <br/>
-                    your health risks through user friendly
-                    <br>
-                    and smart platforms
+                <div style="">
+                    <img src="images/devices.png" class="devicepic"/>
+                    <div class="description">Riskars analyzes big data to visualize
+                        <br/>
+                        your health risks through user friendly
+                        <br>
+                        and smart platforms
+                    </div>
+                    <div class="signinbutton">
+                        <span id="signinButton">
+                          <span
+                                  class="g-signin"
+                                  data-callback="signinCallback"
+                                  data-clientid="CLIENT_ID"
+                                  data-cookiepolicy="single_host_origin"
+                                  data-requestvisibleactions="http://schema.org/AddAction"
+                                  data-scope="https://www.googleapis.com/auth/plus.login">
+                          </span>
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>

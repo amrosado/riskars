@@ -46,25 +46,64 @@ body {
 
 .devicepic {
     display: flex;
-    max-width: 40%;
+    max-width: 75%;
     margin: auto;
-    padding-left: 20%;
-    padding-top: 3%;
 }
 
 .description {
     font-size: 25pt;
     text-align: center;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .centeringdiv {
     justify-content: center;
     display: flex;
     flex-direction: column;
+    padding-top: 3%;
+    padding-right: 6%;
 }
 
 .flexrow {
     display: flex;
     flex-direction: row;
+    margin: auto;
+}
+
+.signinbutton {
+    margin: 0 auto;
+    max-width: 300px;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+}
+
+.topleftdescription1 {
+    font-size: 20pt;
+    font-weight: 200;
+    text-align: left;
+    margin: auto;
+}
+
+
+.topleftdescription3 {
+    font-size: 25pt;
+    font-weight: 300;
+    text-align: left;
+    margin: auto;
+}
+
+.topleftdescription2 {
+    font-size: 22pt;
+    font-weight: 300;
+    text-align: left;
+    margin: auto;
+}
+
+.topleftdescription4 {
+    font-size: 28pt;
+    font-weight: 300;
+    text-align: left;
     margin: auto;
 }
