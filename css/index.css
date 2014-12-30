@@ -36,3 +36,15 @@
     left:0;
     background:#000000;
 }
+
+.footernotes {
+    color: #fff;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
