@@ -28,13 +28,21 @@
     <div style="position: relative; z-index: 2;">
         <core-toolbar style="background-color: #EFEDED" class="medium-tall">
             <span flex>
-                <div><a href="index.html"><img src="images/logo.png" id="bannerlogo"/></a></div>
+                <a href="index.html"><img src="images/logo.png" id="bannerlogo"/></a>
             </span>
-            <paper-tabs class="bottom fit" selected="0">
-                <paper-tab>ABOUT</paper-tab>
-                <paper-tab>HOW IT WORKS</paper-tab>
-                <paper-tab>CONTACT</paper-tab>
+            <span class="bottom" flex></span>
+            <paper-tabs class="bottom papertabs" selected="1" link>
+                <paper-tab noink>
+                    <a href="#about.html" horizontal center-center layout>ABOUT</a>
+                </paper-tab>
+                <paper-tab noink>
+                    <a href="#about.html" horizontal center-center layout>HOW IT WORKS</a>
+                </paper-tab>
+                <paper-tab noink>
+                    <a href="#about.html" horizontal center-center layout>CONTACT</a>
+                </paper-tab>
             </paper-tabs>
+            <span class="bottom" flex></span>
         </core-toolbar>
 
         <div class="centeringdiv">
