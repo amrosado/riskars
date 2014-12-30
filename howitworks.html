@@ -14,6 +14,17 @@
     <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     <script type="text/javascript" src="bower_components/d3/d3.js"></script>
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+    <script>
+        function clickAbout() {
+            document.location.href="about.html";
+        }
+        function clickHowitworks() {
+            document.location.href="howitworks.html";
+        }
+        function clickContactus() {
+            document.location.href="contactus.html";
+        }
+    </script>
 
     <link rel="stylesheet" type="text/css" href="css/howitworks.css">
 
@@ -32,14 +43,14 @@
             </span>
             <span class="bottom" flex></span>
             <paper-tabs class="bottom papertabs" selected="1" link>
-                <paper-tab noink>
-                    <a href="about.html" horizontal center-center layout>ABOUT</a>
+                <paper-tab noink onclick="clickAbout()">
+                    ABOUT
                 </paper-tab>
-                <paper-tab noink>
-                    <a href="howitworks.html" horizontal center-center layout>HOW IT WORKS</a>
+                <paper-tab noink onclick="clickHowitworks()">
+                    HOW IT WORKS
                 </paper-tab>
-                <paper-tab noink>
-                    <a href="contactus.html" horizontal center-center layout>CONTACT</a>
+                <paper-tab noink onclick="clickContactus()">
+                    CONTACT
                 </paper-tab>
             </paper-tabs>
             <span class="bottom" flex></span>

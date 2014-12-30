@@ -15,6 +15,18 @@
     <script type="text/javascript" src="bower_components/d3/d3.js"></script>
     <script src="https://apis.google.com/js/client:platform.js" async defer></script>
 
+    <script>
+        function clickAbout() {
+            document.location.href="about.html";
+        }
+        function clickHowitworks() {
+            document.location.href="howitworks.html";
+        }
+        function clickContactus() {
+            document.location.href="contactus.html";
+        }
+    </script>
+
     <link rel="stylesheet" type="text/css" href="css/contactus.css">
 
     <title>Riskars: Health Risks Visualized</title>
@@ -28,16 +40,23 @@
     <div style="position: relative; z-index: 2;">
         <core-toolbar style="background-color: #EFEDED" class="medium-tall">
             <span flex>
-                <div><a href="index.html"><img src="images/logo.png" id="bannerlogo"/></a></div>
+                <a href="index.html"><img src="images/logo.png" id="bannerlogo"/></a>
             </span>
             <span class="bottom" flex></span>
-                <paper-tabs class="bottom papertabs" selected="2">
-                    <paper-tab noink>ABOUT</paper-tab>
-                    <paper-tab noink>HOW IT WORKS</paper-tab>
-                    <paper-tab noink>CONTACT</paper-tab>
-                </paper-tabs>
+            <paper-tabs class="bottom papertabs" selected="2" link>
+                <paper-tab noink onclick="clickAbout()">
+                    ABOUT
+                </paper-tab>
+                <paper-tab noink onclick="clickHowitworks()">
+                    HOW IT WORKS
+                </paper-tab>
+                <paper-tab noink onclick="clickContactus()">
+                    CONTACT
+                </paper-tab>
+            </paper-tabs>
             <span class="bottom" flex></span>
         </core-toolbar>
+
         <div class="centeringform">
             <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
                 <div class="row">
