@@ -1,0 +1,65 @@
+<!-- from http://bost.ocks.org/mike/leaflet/ -->
+
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="/bower_components/leaflet/dist/leaflet.js"></script>
+<style>
+#map {
+  width: 960px;
+  height: 500px;
+}
+</style>
+
+
+
+
+
+
+
+<div id="map"></div>
+<script>
+//basic map using MapBox tiles:
+var map = new L.Map("map", {center: [37.8, -96.9], zoom: 4})
+    .addLayer(new L.TileLayer("http://{s}.tiles.mapbox.com/v3/examples.map-vyofok3q/{z}/{x}/{y}.png"));
+//add an SVG element to Leaflet’s overlay pane
+var svg = d3.select(map.getPanes().overlayPane).append("svg"),
+    g = svg.append("g").attr("class", "leaflet-zoom-hide");
+//load GeoJSON data
+d3.json("us-states.json", function(collection) {
+  // code here
+});
+
+function projectPoint(x, y) {
+  var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+  this.stream.point(point.x, point.y);
+}
+//Now that we can project points, we can create a d3.geo.path to convert GeoJSON to SVG:
+var transform = d3.geo.transform({point: projectPoint}),
+    path = d3.geo.path().projection(transform);
+//create path elements for each of the features using D3’s data join:
+var feature = g.selectAll("path")
+    .data(collection.features)
+  .enter().append("path");
+//initialize the path data by setting the d attribute:
+feature.attr("d", path);
+//compute the projected bounding box
+var bounds = path.bounds(collection),
+    topLeft = bounds[0],
+    bottomRight = bounds[1];
+//set the dimensions of the SVG with sufficient padding to display features above or to the left of the origin. The layer origin is arbitrary, so sometimes you need to draw above and to the left of the origin; without this extra padding, the top-left corner would be clipped and some features would be invisible. (Note that since we’re setting the left and top styles, we rely on the SVG element being position: relative.)
+svg .attr("width", bottomRight[0] - topLeft[0])
+    .attr("height", bottomRight[1] - topLeft[1])
+    .style("left", topLeft[0] + "px")
+    .style("top", topLeft[1] + "px");
+
+g   .attr("transform", "translate(" + -topLeft[0] + "," + -topLeft[1] + ")");
+
+
+</script>
+
+
+
+
+
+
+

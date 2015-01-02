@@ -1,0 +1,77 @@
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+
+<script>
+var width = 960,
+    height = 500,
+    centered,
+    quantize;
+ 
+var path = d3.geo.path();
+ 
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height);
+ 
+var color = d3.scale.linear()
+ .domain([0, 20])
+ .range(["#75B7CF", "#00114F"])
+ .interpolate(d3.interpolateLab);
+ 
+queue()
+    .defer(d3.json, "/assets/us.js")
+    .defer(d3.csv, "/assets/quickfacts.csv")
+    .await(ready);
+ 
+var us, census;
+function showData() {
+    var rateById = {};
+    var maxVal = 0; var minVal = 0;
+    var vals = [];
+    census.forEach(function (d) {
+        var fips = parseInt(d.fips);
+        if (fips != 0 && fips.toString().substr(3) != '000') {
+            var key = document.getElementById('measure').value;
+            var val = parseFloat(d[key]);
+            if (val > maxVal) maxVal = val;
+            if (val < minVal) minVal = val;
+            rateById[fips] = +val;
+            vals.push(val);
+        }
+    });
+ 
+    quantize = d3.scale.quantile()
+     .domain(vals)
+    .range(d3.range(20).map(function (i) { return color(i); }));
+ 
+    svg.select('g').selectAll('path')
+         .transition()
+        .duration(750)
+         .style("fill", function (d) { return quantize(rateById[d.id]); });
+ 
+}
+ 
+function prepareMap() {
+ 
+    svg.append("g")
+          .attr("class", "counties")
+        .selectAll("path")
+          .data(topojson.object(us, us.objects.counties).geometries)
+        .enter().append("path")
+          .style("fill", function (d) { return '#ccc' })
+          .attr("d", path);
+ 
+ 
+    svg.append("path")
+         .datum(topojson.mesh(us, us.objects.states, function (a, b) { return a.id !== b.id; }))
+         .attr("class", "states")
+         .attr("d", path);
+}
+ 
+function ready(error, usData, censusData) {
+    census = censusData;
+    us = usData;
+    prepareMap();
+    showData();
+}
+</script>
