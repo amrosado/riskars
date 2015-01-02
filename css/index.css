@@ -26,6 +26,32 @@
 .centeringdiv {
     justify-content: center;
     display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.centeringdiv1 {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+.centeringdiv1 {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+.centeringdiv2 {
+    justify-content: center;
+    display: flex;
+    flex: 1;
+}
+
+.centeringdiv3 {
+    justify-content: center;
+    display: flex;
+    flex: 1;
 }
 
 .footer {
