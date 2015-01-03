@@ -1,0 +1,175 @@
+body {
+    margin: 0px;
+    font-family: 'Roboto', normal;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    bottom: 0;
+    position: absolute;
+    
+}
+
+.bannerlogo {
+    max-width: 15%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.papertabs {
+    width: 350px;
+    margin: auto;
+}
+
+.bannercolor {
+    background-color: #F7F7F7;
+}
+
+.devicepic {
+    display: block;
+    max-width: 50%;
+    margin: auto;
+}
+
+
+.description {
+    font-size: 25pt;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    align-self: center;
+    display: block;
+}
+
+.description1 {
+    font-size: 18pt;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    align-self: center;
+    display: block;
+}
+
+.description2 {
+    font-size: 14pt;
+    font-weight: 300;
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    align-self: center;
+    display: block;
+    padding-top: 25px;
+}
+
+.signinbutton {
+    margin: auto;
+    max-width: 300px;
+    justify-content: center;
+    align-self: center;
+    display: block;
+    padding: 50px;
+}
+
+.aboutpage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footernotes {
+    color: #000;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-self: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #F7F7F7;
+}
+
+.aboutbg {
+    background-image: url(../images/howitworkspage.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.contactusbg {
+    background-image: url(../images/contactuspage.png);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.img {
+    max-width: 70%;
+    max-width: 70%;
+}
+
+.headimg {
+    max-width: 70%;
+    max-width: 70%;
+}
+
+.centeringdiv {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    align-items: center;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+
+.centering {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.flexgrow {
+    flex-grow: 1;
+}
+
+.centeringform {
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    padding-top: 5%;
+}
+
+#submit_button {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    width: 100px;
+}
+
+.row {
+    padding-top: 10px;
+}
+
+.input {
+    width: 350px;
+}
+
