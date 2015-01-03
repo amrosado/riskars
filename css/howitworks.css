@@ -1,6 +1,8 @@
 body {
     background-image: url("howitworkspage.png");
     font-family: 'Roboto', normal;
+    display: flex;
+    flex: 1 100%;
 }
 
 
@@ -110,4 +112,5 @@ body {
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+    background-color: #000000;
 }
