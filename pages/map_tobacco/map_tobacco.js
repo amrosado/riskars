@@ -1,5 +1,7 @@
 var hits = {};
 
+var dgi = {};  //dave gutman inspector variable
+
 var parade = window.histograms.states;
 
 for (var i = 0 ; i<parade.length ; i++)
@@ -32,10 +34,12 @@ var g = svg.append("g")
     .attr("id", "states");
 
 d3.json("states.json", function(json) {
+
   var heatmap = d3.scale.linear()
     .domain([0,d3.max(json.features, function(d) { return Math.log(hits[d.properties.abbr] || 1); })])
     .interpolate(d3.interpolateRgb)
     .range(["#ffffff","#073f07"])
+
   var states = g.selectAll("path")
     .data(json.features)
     .enter().append("path")
@@ -43,6 +47,7 @@ d3.json("states.json", function(json) {
       .attr("id", function(d) { return d.properties.abbr; })
       .style("fill", function(d) { return heatmap(Math.log(hits[d.properties.abbr] || 1)); })
       .on("click", click)
+
   var labels = g.selectAll("text")
     .data(json.features)
     .enter().append("text")
@@ -57,6 +62,8 @@ function click(d) {
   var x = 0,
       y = 0,
       k = 1;
+
+   console.log('I CLICKED SOMETHING');
 
   if (d && centered !== d) {
     var centroid = path.centroid(d);
@@ -73,6 +80,18 @@ function click(d) {
   g.selectAll("text")
       .text(function(d) { return d.properties.abbr; })
       .classed("active",false);
+   
+
+   console.log(d.properties.abbr+' is what I think I clicked on?');
+    
+    // d.properties stores all the fun info for the box
+
+    box_text = d.properties.name+' is abbreviation as ' + d.properties.abbr
+    
+    $('#dg_pg').text(box_text);
+
+     dgi = d.properties;
+
   if (centered) {
       g.select("#label-"+centered.properties.abbr)
           .text(function(d) { return d.properties.name+': '+(hits[d.properties.abbr]||'(none)'); })
