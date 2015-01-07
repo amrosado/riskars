@@ -47,6 +47,20 @@ d3.json("states.json", function(json) {
       .attr("id", function(d) { return d.properties.abbr; })
       .style("fill", function(d) { return heatmap(Math.log(hits[d.properties.abbr] || 1)); })
       .on("click", click)
+   
+  //need to add an on hover event
+
+//    var dyn_update = g.selectAll(
+  var hvr_states = g.selectAll("path")
+    .data(json.features)
+    .enter().append("path")
+      .attr("d", path)
+      .attr("id", function(d) { return d.properties.abbr; })
+      .style("fill", function(d) { return heatmap(Math.log(hits[d.properties.abbr] || 1)); })
+      .on("mouseover", mouse_stuff)
+   
+
+
 
   var labels = g.selectAll("text")
     .data(json.features)
@@ -57,6 +71,12 @@ d3.json("states.json", function(json) {
       .on("click", click)
       .text(function(d) { return d.properties.abbr; });
 });
+
+
+function mouse_stuff(d)
+   {
+  console.log('I HOVER!!');
+   }
 
 function click(d) {
   var x = 0,

@@ -23,6 +23,10 @@
 
     <script type="text/javascript" src="/bower_components/d3.min.js"> </script>
     <script type="text/javascript" src="http://d3js.org/queue.v1.min.js"> </script>
+
+
+
+
    <style>
     #dg_pg { border-style: solid;
              border-width: 5px; 
@@ -41,8 +45,8 @@
 
     <!-- Navigation -->
     
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
+<!--     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span>
@@ -67,21 +71,27 @@
             </div>
         </div>
     </nav> 
+   -->
 
 
-    <div class="container" style="margin-top:70px">
+    <div class="row" style="margin-top:70px" > 
+        <div class="col-md-8" >
+	
+        	Tobacco!
+	        Look at all this tobacco people are using!
+    	    <hr>
+        	<link href="map_tobacco.css" rel="stylesheet">
+	        <script src="http://d3js.org/d3.v2.min.js?2.9.6"></script> 
+    	    <script type="text/javascript" src="histograms.js"></script>
+        	<script type="text/javascript" src="map_tobacco.js"> </script>
 
-        Tobacco!
-        Look at all this tobacco people are using!
-        <hr>
-        <link href="map_tobacco.css" rel="stylesheet">
-        <script src="http://d3js.org/d3.v2.min.js?2.9.6"></script> 
-        <script type="text/javascript" src="histograms.js"></script>
-        <script type="text/javascript" src="map_tobacco.js"> </script>
 
-    </div>
-
-
+        </div>
+     
+        <div id="dg_pg" class="col-md-4" style="border:2px solid black; width:400px" >
+           DYNAMIC CONTENT WILL GO HERE!!!
+        </div>
+     </div>
 
 
     <!-- Footer -->
@@ -112,7 +122,6 @@
         </div>
     </footer> 
 
-	<div style="dg" id="dg_pg">I AM HERE</div>
 
     <!-- jQuery Version 1.11.0 -->
     <script src="/static/js/jquery-1.11.0.js"></script>
